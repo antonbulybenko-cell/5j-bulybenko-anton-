@@ -1,5 +1,8 @@
 from turtle import *
 
+Screen().setup(1.0, 1.0)
+delay(100)
+
 width (3)
 # корпус човна
 fillcolor('brown')
