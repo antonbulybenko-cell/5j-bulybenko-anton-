@@ -59,7 +59,7 @@ if n == 6:
 
 if n >= 7:
   for i in range(n):
-    forward(50-n/3)
+    forward(50-n*0.9)
     right(360/n)
   
 done()
