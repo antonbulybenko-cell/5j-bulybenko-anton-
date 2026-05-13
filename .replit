@@ -18,13 +18,55 @@ author = "agent"
 task = "workflow.run"
 args = "Start application"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "vprava27.py"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
 
-[workflows.workflow.metadata]
-outputType = "vnc"
-
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python turtle-main.py"
+
+[workflows.workflow.metadata]
+outputType = "vnc"
+
+[[workflows.workflow]]
+name = "Example 1 p 25"
+mode = "sequential"
+author = 55095364
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example25.1.py"
+
+[[workflows.workflow]]
+name = "vprava24.py"
+mode = "sequential"
+author = 55095364
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python vprava24.py"
+
+[[workflows.workflow]]
+name = "vprava25.py"
+mode = "sequential"
+author = 55095364
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python vprava25.py"
+
+[[workflows.workflow]]
+name = "vprava27.py"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python vprava27.py"
+
+[workflows.workflow.metadata]
+outputType = "vnc"
